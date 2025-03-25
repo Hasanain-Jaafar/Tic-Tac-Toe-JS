@@ -1,10 +1,22 @@
 // >========== DOM SELECTORS ===========>>
 const board = document.querySelector(".board");
-let currentPlayer = "⚡";
+const selectUser = document.querySelector(".select-user");
+const mainBoard = document.querySelector("main");
+const userBtn = document.querySelectorAll(".btn-wrapper button");
+let currentPlayer ;
 let cells = Array.from({ length: 9 });
 //
-// <<==================== END ===================================<<
+// <<==================== DOM SELECTORS END ===================================<<
 //
+//  ---------- Hide Select user  ------>>-----
+userBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    mainBoard.classList.remove("hidden");
+    selectUser.classList.add("hidden");
+  });
+  
+});
+
 //  ---------- handleClick ------>>-----
 const handleClick = (e) => {
   const cellIndex = e.target.dataset.index;

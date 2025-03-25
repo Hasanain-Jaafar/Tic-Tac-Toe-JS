@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ⬆⬇️ Open Graph-->
-    <meta property="og:title" content="Tic Tac Toe Game" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Tic Tac Toe Game" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="./assets/tic tac.png" />
-    <!-- ⬆️ -->
-    <!-- Favicon ⬇️ -->
-    <link rel="shortcut icon" href="./assets/tic tac.svg" type="image/x-icon">
-    <!-- Favicon ⬆️ -->
-    <!-- ⬆⬇️  CSS -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- ⬆️ -->
-    <title>Tic Tac Toe Game</title>
-</head>
-<body>
-    <h1>Tic Tac Toe </h1>
-    <main>
-        <div class="board">
-        </div>
-        <button onclick="resetGame()">Reset</button>
-    </main>
-    <div class="overly hidden">
-        <div>
-            <h1>Choose your Symbol</h1>
-            <div class="roleBtn">
-                <button>🅾️</button>
-                <button>⚡</button>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ⬆⬇️ Open Graph-->
+        <meta property="og:title" content="Tic Tac Toe Game" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Tic Tac Toe Game" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="./assets/tic tac.png" />
+        <!-- ⬆️ -->
+        <!-- Favicon ⬇️ -->
+        <link rel="shortcut icon" href="./assets/tic tac.svg" type="image/x-icon">
+        <!-- Favicon ⬆️ -->
+        <!-- ⬆⬇️  CSS -->
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- ⬆️ -->
+        <title>Tic Tac Toe Game</title>
+    </head>
+
+    <body>
+        <div class="select-user">
+            <div>
+                <div class="player-wrapper">
+                    <h2>Choose your Symbol</h2>
+                    <div class="btn-wrapper">
+                        <div>
+                            <p>Player 1</p>
+                            <button>🅾️</button>
+                        </div>
+                        <div>
+                            <p>Player 2</p>
+                            <button>⚡</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="./main.js"></script>
-</body>
+        <h1>Tic Tac Toe </h1>
+        <main class="hidden">
+            <p >current player <h4 class="currentPlayer"></h4></p>
+            <div class="board">
+            </div>
+            <button onclick="resetGame()">Reset</button>
+        </main>
+        <div class="overly hidden">
+            <div>
+                <h1>Choose your Symbol</h1>
+                <div class="roleBtn">
+                    <button>🅾️</button>
+                    <button>⚡</button>
+                </div>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
 
 </html>
