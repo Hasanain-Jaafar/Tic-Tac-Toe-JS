@@ -2,7 +2,7 @@
 
 A modern, interactive Tic Tac Toe game built with HTML, CSS, and JavaScript. This project features custom symbols (🅾️ and ⚡), player turn indicators, and animated win/draw announcements.
 
-![Tic Tac Toe Game Screenshot](assets/screenshot.png)
+![Tic Tac Toe Game Screenshot](assets/Screenshot.png)
 
 ## Features
 
