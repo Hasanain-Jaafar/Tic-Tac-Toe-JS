@@ -41,7 +41,10 @@
         </div>
         <h1>Tic Tac Toe </h1>
         <main class="hidden">
-            <p >current player <h4 class="currentPlayer"></h4></p>
+            <div class="player-turn-wrapper">
+                <p>player Turn</p>
+                <h4 class="currentPlayer"></h4>
+            </div>
             <div class="board">
             </div>
             <button onclick="resetGame()">Reset</button>
@@ -53,6 +56,13 @@
                     <button>🅾️</button>
                     <button>⚡</button>
                 </div>
+            </div>
+        </div>
+        <div class="winner-popup hidden">
+            <div class="popup-content">
+                <div class="winner-symbol"></div>
+                <h2 class="winner-message"></h2>
+                <button class="play-again-btn" onclick="hideWinnerPopup()">Play Again</button>
             </div>
         </div>
         <script src="./main.js"></script>
