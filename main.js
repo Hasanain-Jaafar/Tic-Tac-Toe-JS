@@ -97,7 +97,7 @@ function updatePlayerTurnDisplay() {
   // Create the current turn indicator
   const currentTurn = document.createElement('div');
   currentTurn.classList.add('current-turn');
-  currentTurn.textContent = "→ " + currentPlayer + " turn";
+  currentTurn.textContent = currentPlayer + " Turn";
   
   // Add all elements to the status display
   currentPlayerStatus.appendChild(player1Container);
